@@ -83,7 +83,7 @@ export default {
         image: '',
         image_output_name: '',
         maintainer: '',
-        instr: []
+        instr: ''
       },
       drawer: false,
       Other_instr: '',
@@ -118,8 +118,9 @@ export default {
       if (this.input_form.Other_instr === '') {
         this.input_form.instr = this.input_form.instr
       } else {
-        this.input_form.instr = this.input_form.Other_instr.split(/[(\r\n)\r\n]+/)
-        this.input_form.instr = this.input_form.instr.map(function (v) { return v.replace(/^\s+|\s+$/g, '') })
+        const temp = this.input_form.Other_instr.split(/[(\r\n)\r\n]+/)
+        temp= temp.map(function (v) { return v.replace(/^\s+|\s+$/g, '') })
+        this.input_form.instr = temp.join(' ')
       }
     }
   }

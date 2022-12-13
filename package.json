@@ -21,6 +21,7 @@
     "element-ui": "^2.15.9",
     "js-base64": "^3.7.3",
     "js-cookie": "^3.0.1",
+    "mdi-vue": "^3.0.13",
     "socket.io": "^2.3.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
